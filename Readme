@@ -1,0 +1,42 @@
+
+# **Assignment 5: Quicksort Algorithm - Deterministic vs Randomized**  
+
+## **Overview**  
+This project implements two versions of the Quicksort algorithm in Python:  
+1. **Deterministic Quicksort** – Uses the last element as the pivot.  
+2. **Randomized Quicksort** – Selects a random pivot to reduce worst-case scenarios.  
+
+The goal is to analyze their performance and compare execution times under different conditions.  
+
+---
+
+## **How to Run the Code**  
+
+### **Prerequisites**  
+Ensure you have **Python 3.12** (or later) installed on your system.  
+
+### **Running the Programs**  
+1. Open a terminal or command prompt.  
+2. Navigate to the project directory:  
+   ```bash
+   cd "Assignment 5"
+   ```
+3. Run the **Deterministic Quicksort**:  
+   ```bash
+   python quicksort_deterministic.py
+   ```
+4. Run the **Randomized Quicksort**:  
+   ```bash
+   python quicksort_randomized.py
+   ```
+
+---
+
+## **Summary of Findings**  
+- **Deterministic Quicksort** took **0.0039985 seconds** to sort a random dataset.  
+- **Randomized Quicksort** performed better, taking **0.0020027 seconds** due to improved pivot selection.  
+- The **average time complexity** of both versions is **O(n log n)**, but the **deterministic version is more prone to worst-case O(n²) performance** when sorting nearly sorted data.  
+- **Randomization significantly reduces the chances of worst-case performance**, making it more efficient for large datasets.  
+
+### **Conclusion**  
+Randomized Quicksort provides better overall performance and consistency, making it preferable for sorting large or partially sorted datasets.
